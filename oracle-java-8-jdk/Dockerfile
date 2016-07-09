@@ -6,7 +6,7 @@ RUN rm -f /etc/yum.repos.d/* \
   && curl -fsSL 'https://raw.githubusercontent.com/maqian/workarounds/master/centos/7/set-sources-cn' | sh \
   && curl -fsSL 'https://raw.githubusercontent.com/maqian/workarounds/master/centos/7/set-timezone-cn' | sh \
   && curl -fsSL 'https://raw.githubusercontent.com/maqian/workarounds/master/centos/7/set-locale-cn' | sh \
-  && curl -fsSL 'https://raw.githubusercontent.com/maqian/workarounds/master/centos/7/java-installer' | sh -s jre 8 92 14 \
+  && curl -fsSL 'https://raw.githubusercontent.com/maqian/workarounds/master/centos/7/java-installer' | sh -s jdk 8 92 14 \
   && curl -fsSL 'https://raw.githubusercontent.com/maqian/workarounds/master/docker/java-limit-memory-installer' | sh
 
 ENV TIMEZONE=Asia/Shanghai \
