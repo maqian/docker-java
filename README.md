@@ -6,14 +6,16 @@ openjdk的镜像继承自[官方openjdk镜像](https://hub.docker.com/_/java/)�
 
 镜像列表
 =======
-*[openjdk-8-jdk](openjdk-8-jdk)
-*[openjdk-8-jre](openjdk-8-jre)
-*[oracle-java-8-jdk](oracle-java-8-jdk)
-*[oracle-java-8-jre](oracle-java-8-jre)
+
+* [openjdk-8-jdk](openjdk-8-jdk)
+* [openjdk-8-jre](openjdk-8-jre)
+* [oracle-java-8-jdk](oracle-java-8-jdk)
+* [oracle-java-8-jre](oracle-java-8-jre)
 
 
 openjdk-8-jdk
 =============
+
 1 继承自官方镜像java:openjdk-8u91-jdk。
 2 添加aliyun镜像源。[使用脚本](https://github.com/maqian/workarounds/blob/master/debian/jessie/set-sources-cn)
 3 修改timezone为Asia/Shanghai。[使用脚本](https://github.com/maqian/workarounds/blob/master/debian/jessie/set-timezone-cn)
@@ -23,6 +25,7 @@ openjdk-8-jdk
 
 openjdk-8-jre
 =============
+
 1 继承自官方镜像java:openjdk-8u91-jre。
 2 添加aliyun镜像源。[使用脚本](https://github.com/maqian/workarounds/blob/master/debian/jessie/set-sources-cn)
 3 修改timezone为Asia/Shanghai。[使用脚本](https://github.com/maqian/workarounds/blob/master/debian/jessie/set-timezone-cn)
@@ -32,6 +35,7 @@ openjdk-8-jre
 
 oracle-java-8-jdk
 =================
+
 1 继承自基础自官方镜像centos:7
 2 添加aliyun镜像源。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-sources-cn)
 3 修改timezone为Asia/Shanghai。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-timezone-cn)
@@ -42,6 +46,7 @@ oracle-java-8-jdk
 
 oracle-java-8-jre
 =================
+
 1 继承自基础自官方镜像centos:7
 2 添加aliyun镜像。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-sources-cn)
 3 修改timezone为Asia/Shanghai。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-timezone-cn)
