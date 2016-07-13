@@ -48,7 +48,7 @@ oracle-java-8-jre
 =================
 
 1. 继承自基础自官方镜像centos:7
-2. 添加aliyun镜像。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-sources-cn)
+2. 添加aliyun镜像源。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-sources-cn)
 3. 修改timezone为Asia/Shanghai。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-timezone-cn)
 4. 修改locale为zh_CN.UTF-8。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/set-locale-cn)
 5. 安装oracle-java官方jre8u91，删除java安装目录无用的文件。[使用脚本](https://github.com/maqian/workarounds/blob/master/centos/7/oracle-java-installer)
