@@ -1,4 +1,4 @@
-FROM java:openjdk-8u91-jre
+FROM openjdk:8u102-jre
 
 MAINTAINER Ma Qian<maqian258@gmail.com>
 
