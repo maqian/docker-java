@@ -1,4 +1,4 @@
-FROM openjdk:8u121-jdk
+FROM openjdk:8u131-jdk
 
 MAINTAINER Ma Qian<maqian258@gmail.com>
 
