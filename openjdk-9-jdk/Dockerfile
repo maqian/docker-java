@@ -2,10 +2,10 @@ FROM openjdk:9.0.1-11-jdk
 
 MAINTAINER Ma Qian<maqian258@gmail.com>
 
-RUN curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/debian/buster/set-sources-cn' | sh \
-  && curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/debian/set-timezone-cn' | sh \
-  && curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/debian/set-locale-cn' | sh \
-  && curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/docker/install-java-limit-memory' | sh \
+RUN curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/debian/buster/set-sources-cn' | sh \
+  && curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/debian/set-timezone-cn' | sh \
+  && curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/debian/set-locale-cn' | sh \
+  && curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/sysfree/install-ejava' | sh \
   && apt-get install -y openjdk-9-dbg
 
 ENV TIMEZONE=Asia/Shanghai TZ=Asia/Shanghai \

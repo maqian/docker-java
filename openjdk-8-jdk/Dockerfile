@@ -2,10 +2,10 @@ FROM openjdk:8u151-jdk
 
 MAINTAINER Ma Qian<maqian258@gmail.com>
 
-RUN curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/debian/stretch/set-sources-cn' | sh \
-  && curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/debian/set-timezone-cn' | sh \
-  && curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/debian/set-locale-cn' | sh \
-  && curl -sSL 'https://raw.githubusercontent.com/maqian/workarounds/master/docker/install-java-limit-memory' | sh \
+RUN curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/debian/stretch/set-sources-cn' | sh \
+  && curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/debian/set-timezone-cn' | sh \
+  && curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/debian/set-locale-cn' | sh \
+  && curl -sSL 'https://raw.githubusercontent.com/maqian/toolbox/master/sysfree/install-ejava' | sh \
   && apt-get install -y openjdk-8-dbg
 
 ENV TIMEZONE=Asia/Shanghai TZ=Asia/Shanghai \
